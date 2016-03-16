@@ -14,7 +14,12 @@ namespace usodetryparse
             Console.WriteLine("ingrese su edad");
             dato = Console.ReadLine();
             int numero;
-            numero = int.Parse(dato);
+           //numero = int.Parse(dato);
+            while(int.TryParse(dato,out numero)==false)
+                {
+                    Console.WriteLine("error reintente ingresando un numero");
+                    dato = Console.ReadLine();
+                   }
 
         }
     }
