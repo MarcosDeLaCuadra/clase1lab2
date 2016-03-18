@@ -20,6 +20,7 @@ namespace usodetryparse
                     Console.WriteLine("error reintente ingresando un numero");
                     dato = Console.ReadLine();
                    }
+            Console.WriteLine("asd");
 
         }
     }
